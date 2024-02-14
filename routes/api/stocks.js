@@ -7,6 +7,6 @@ router.get('/', stockCtrl.indexComplete, stockCtrl.jsonStocks)
 // Create
 router.post('/', stockCtrl.create, stockCtrl.jsonStock)
 // Show
-router.get('/:id', stockCtrl.show, stockCtrl.jsonStock)
+router.get('/:symbol', stockCtrl.show, stockCtrl.jsonStock)
 
 module.exports = router
