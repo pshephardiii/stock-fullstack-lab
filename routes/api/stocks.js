@@ -3,7 +3,7 @@ const router = express.Router()
 const stockCtrl = require('../../controllers/api/stocks')
 
 // Index 
-router.get('/', stockCtrl.indexComplete, stockCtrl.jsonStocks)
+router.get('/', stockCtrl.index, stockCtrl.jsonStocks)
 // Create
 router.post('/', stockCtrl.create, stockCtrl.jsonStock)
 // Show
